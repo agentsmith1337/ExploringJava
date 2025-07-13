@@ -1,7 +1,9 @@
 import java.util.Scanner;
+
 public class ArmstrongNumbers {
     public static void main(String[] args) {
-        Scanner io = new Scanner(System.in);
+        // Scanner io = new Scanner(System.in);
+        try (Scanner io = new Scanner(System.in)) {
         System.out.println("Please enter a number to test for Armstrong");
         int Number = io.nextInt();
         int CopyNum = Number;
@@ -20,6 +22,7 @@ public class ArmstrongNumbers {
         }
         if (Sum==Number) System.out.println("Congratulations, You found a Armstrong Number!");
         else System.out.println("The number is not Armstrong.");
+      } 
     }
     static int[] extendArray(int[] Arr) {
         int NewArr[] = new int[Arr.length*2];

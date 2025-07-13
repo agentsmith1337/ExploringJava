@@ -3,6 +3,7 @@
 public class ArrayBasics {
     public static void main(String[] args) {
         int[] numbers = {1,2,3,4,5};
+        int[] numbers2 = new int[]{1,2,3,4,5}; //also valid
         int[] anotherNumbers = new int[23];
         anotherNumbers[0]=0;
         anotherNumbers[1]=1;
