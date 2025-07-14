@@ -42,6 +42,7 @@ class WifiAdaptor extends Device {
         super.enable();
         System.out.println("Device is active in Network Mode");
     }
+    @Override
     void printInformation() {
         
         System.out.println(deviceName+" "+"Build: "+build);
